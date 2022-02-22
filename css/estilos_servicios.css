@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #292929; */
+  background-color: #292929;
+
+  /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+/* Estilos para el header y el nav */
+
+header {
+  background-color: /* #ec7063 */ #141414;
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+  /* box-shadow: 0px 3px rgba(100, 100, 100, 0.7); */
+}
+
+.menu {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+#menu-lista ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #141414;
+  padding: 0;
+}
+
+#menu-lista ul ul li {
+  float: none;
+  width: 150px;
+  margin-left: 0;
+}
+
+#menu-lista ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+#menu-lista ul li:hover > ul {
+  display: block;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  float: left;
+  padding: 10px;
+}
+
+.registro {
+  color: /* #ccf49f */ /* #e50914 */ #fff;
+  text-shadow: #e50914 0.2em 0.2em 0.3em;
+  font-size: large;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  /*margin-top: 25px;*/
+  padding: 25px 0;
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: /* #444 */ #aaa;
+  font-weight: bold;
+}
+
+nav ul li a::before {
+  display: block;
+  content: "";
+  width: 0%;
+  background-color: /* #b3e59f */ /* #bd4150 */ /* #ccf49f */ #e50914;
+  height: 4px;
+  top: 0;
+  position: absolute;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+  /*border: 2px solid black;*/
+}
+
+/* Estilos para el main */

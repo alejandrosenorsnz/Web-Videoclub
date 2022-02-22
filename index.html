@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos_index.css" rel="stylesheet" type="text/css">
+    <title>Cine / Videoclub</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img class="logo" src="images/logo.png"/>
+            <nav id="menu-lista">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="peliculas.html">Películas</a>
+                        <ul>
+                            <li><a href="#">Comedia</a></li>
+                            <li><a href="#">Terror</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <li><a href="#">Acción</a></li>
+                            <li><a href="#">Musical</a></li>
+                            <li><a href="#">Ciencia ficción</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Novedades Próximamente</a></li>
+                    <li><a class="registro" href="#">¡REGISTRATE!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="pelicula-principal">
+            <div class="contenedor-principal">
+                <h3 class="titulo-peli-principal">Uncharted</h3>
+                <p class="descripcion-peli-principal">En una aventura de acción que se extiende por todo el mundo, 
+                    ambos se embarcan en una peligrosa búsqueda de “el mayor tesoro nunca antes encontrado” al tiempo que 
+                    rastrean las claves que les podrían conducir al hermano de Nathan, perdido hace ya mucho tiempo.
+                </p>
+                <a class="boton-principal"><img id="posicion-boton" src="images/reproducir.png" width="13px" height="13px"/>Reproducir</a>
+                <a class="boton-principal" href="#VentanaInfo"><img id="posicion-boton" src="images/info.png" width="15px" height="15px"/>Más información</a>
+            </div>
+        </div>
+        <div id="VentanaInfo" class="modal">
+            <div class="ventana">
+                <div>
+                    <a href="#">X</a>
+                </div>
+                <div class="info-pelicula">
+                    <div class="imagen-info-pelicula">
+                        <img src="images/uncharted-info.jpg" width="350px"/>
+                    </div>
+                    <div class="detalle-pelicula">
+                        <h1 id="titulo-detalle">Uncharted</h1>
+                        <ul>
+                            <li>2022</li>
+                            <li id="edad-detalle">12+</li>
+                            <li>1 h 56 min.</li>
+                            <li id="calidad-detalle">HD</li>
+                            <li id="puntuacion-detalle">6.1</li>
+                        </ul>
+                        <p id="descripcion-detalle">En una aventura de acción que se extiende por todo el mundo, 
+                            ambos se embarcan en una peligrosa búsqueda de “el mayor tesoro nunca antes encontrado” al tiempo que 
+                            rastrean las claves que les podrían conducir al hermano de Nathan, perdido hace ya mucho tiempo.
+                        </p>
+                        <p id="reparto">Reparto: Tom Holland, Mark Wahlberg, Sophia Ali, Antonio Banderas</p>
+                        <p id="direccion">Dirigida por: Ruben Fleischer</p>
+                        <a class="boton-trailer" href="https://www.youtube.com/watch?v=t_uYnyHWOsY"><img id="posicion-boton-trailer" src="images/reproducir.png" width="12px" height="12px"/>Reproducir Tráiler</a>
+                        <div class="botones-detalle">
+                            <ul>
+                                <li><button role="button" class="boton-lista"><img src="images/mas.png" width="45px" height="45px"/><p id="texto-boton">Mi lista</p></button></li>
+                                <li><button role="button" class="boton-lista"><img src="images/valorar.png" width="45px" height="45px"/><p id="texto-boton">Valorar</p></button></li>
+                                <li><button role="button" class="boton-lista"><img src="images/descargar.png" width="45px" height="45px"/><p id="texto-boton">Descargar</p></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="redes-sociales">
+                <a href="#"><img src="images/redes/instagram.png" width="25px" height="25px" alt="Instagram"/></a>
+                <a href="#"><img src="images/redes/snapchat.png" width="25px" height="25px" alt="Snapchat"/></a>
+                <a href="#"><img src="images/redes/twitter.png" width="25px" height="25px" alt="Twitter"/></a>
+                <a href="#"><img src="images/redes/facebook.png" width="25px" height="25px" alt="Facebook"/></a>
+            </div>
+            <ul class="lista-links">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Películas</a>
+                </li>
+                <li>
+                    <a href="#">Series</a>
+                </li>
+                <li>
+                    <a href="#">Novedades Próximamente</a>
+                </li>
+                <li>
+                    <a href="#">Registro</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Copyright @ 2022
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
